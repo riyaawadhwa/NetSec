@@ -8,7 +8,6 @@ A professional cybersecurity web tool with a dark neon UI.
 |---|---|
 | **Nmap Scanner** | Full nmap integration — Basic, Full, Stealth, UDP, Aggressive, Ping sweep |
 | **Subdomain Enumeration** | crt.sh Certificate Transparency + DNS resolution + nmap dns-brute |
-| **MAC Identification** | ARP scan (nmap) + system ARP table + Scapy broadcast + OUI vendor lookup |
 | **Packet Sniffer** | Live capture via Scapy — TCP/UDP/ICMP/ARP/HTTP/DNS/SSH/FTP detection |
 | **Analytics** | Protocol pie chart, risk bar chart, packet timeline, host risk assessment |
 | **Dashboard** | Live activity feed, scan history, quick scan, stats counters |
@@ -42,7 +41,6 @@ Open browser → **http://localhost:5000**
 |---|---|---|
 | POST | `/api/nmap` | Run nmap scan |
 | POST | `/api/subdomains` | Enumerate subdomains |
-| POST | `/api/mac` | Identify MAC address |
 | GET | `/api/interfaces` | List network interfaces |
 | POST | `/api/sniff/start` | Start packet capture |
 | GET | `/api/sniff/status/<id>` | Get packets + stats |
@@ -68,6 +66,5 @@ Open browser → **http://localhost:5000**
 ## Notes
 
 - Packet sniffing requires root (`sudo`)
-- MAC identification only works on the **same local subnet** (ARP)
 - Aggressive/vuln scan may take several minutes
 - Use responsibly and only on networks you own/have permission to test
