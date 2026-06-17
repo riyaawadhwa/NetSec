@@ -1,6 +1,6 @@
 # NetSec — Advanced Network Intelligence Platform
 
-A professional cybersecurity web tool with a dark neon UI.
+A professional cybersecurity web tool|
 
 ## Features
 
